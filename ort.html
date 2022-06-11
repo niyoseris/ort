@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niyazi Bey'in muhteşem Ortalama Hesaplayıcısı</title>
+</head>
+
+<script src="ort.js"></script>
+
+
+<style>
+    table{
+        width: fit-content;
+        margin-bottom: auto;
+        font-size: large;
+    }
+    td{
+        padding-bottom: 5%;
+    }
+    input{
+        width: fit-content;
+        font-size: large;
+        text-align: center;
+    }
+
+    button{
+        padding: 2%;
+        font-size: large;
+        background-color: yellow;
+        box-shadow: none;
+        border-radius: 25% 95% 25% 95%;
+        font-weight: bolder;
+    }
+
+    .niyobey{
+        margin-top: 5%;
+        margin-bottom: 2%;
+        font-size: xx-large;
+        font-weight: bolder;
+        background-color: magenta;
+        color: white;
+        padding: 2%;
+        
+    }
+</style>
+
+
+<body>
+    <center>
+    <p class="niyobey">Niyo Bey'in Muhteşem Ortalama Hesaplayıcısı</p>
+
+    <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Okulun Açık Günleri</td>
+            <td><input id="oag" type="number" size="4"></input></td>
+          </tr>
+          <tr>
+            <td>Kız Öğrenci Sayısı</td>
+            <td><input id="ks" type="number" size="4"></input></td>
+          </tr>
+          <tr>
+            <td>Erkek Öğrenci Sayısı</td>
+            <td><input id="es" type="number" size="4"></input></td>
+          </tr>
+          <tr>
+            <td>Kızların Toplam Devamsızlıkları</td>
+            <td><input id="ktd" type="number" size="4"></input><br></td>
+          </tr>
+          <tr>
+            <td>Erkeklerin Toplam Devamsızlıkları</td>
+            <td><input id="etd" type="number" size="4"></input></td>
+          </tr>
+          <tr>
+            <td>Kızların Devam Ortalaması</td>
+            <td><label id="kdo"></label></td>
+          </tr>
+          <tr>
+            <td>Erkeklerin Devam Ortalaması</td>
+            <td><label id="edo"></label></td>
+          </tr>
+          <tr>
+            <td>Toplam Devam Ortalaması</td>
+            <td><label id="tdo"></label></td>
+          </tr>
+          <tr>
+            <td>Toplam Devam Yüzdesi</td>
+            <td><label id="tdy"></label></td>
+          </tr>
+        </tbody>
+    </table>
+    <br>
+    <button onclick="ortalaBeyb()">HESAP LÜTFEN</button>
+    </center>
+</body>
+</html>
